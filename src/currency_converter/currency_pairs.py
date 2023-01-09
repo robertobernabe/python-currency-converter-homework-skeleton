@@ -20,7 +20,7 @@ class CurrencyPair:
 
     def from_currency(self, value) -> float:
         # TODO FIXME: Fix the reverse calculation
-        return value 
+        return value
 
 
 class ChfEur(CurrencyPair):
@@ -39,4 +39,8 @@ class ChfEur(CurrencyPair):
 
 class ChfUsd(CurrencyPair):
     """TODO: Implement CHF / USD currency pair"""
+
     pass
+
+
+## TODO: Add an additional currency pair of your choice

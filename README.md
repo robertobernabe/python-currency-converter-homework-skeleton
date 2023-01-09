@@ -3,7 +3,7 @@
 # Tasks
 
 1. Fix all bugs or missing code pieces.
-2. 
+2. Ensure that all tests are green.
 
 ## Setup Dev Environment
 
