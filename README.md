@@ -1,4 +1,4 @@
-# python-currency-converter-homework-example
+# python-currency-converter-homework-skeleton
 
 ## Setup Dev Environment
 
