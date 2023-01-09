@@ -1,5 +1,10 @@
 # python-currency-converter-homework-skeleton
 
+# Tasks
+
+1. Fix all bugs or missing code pieces.
+2. 
+
 ## Setup Dev Environment
 
 1. Create an virtual environment 
@@ -17,9 +22,21 @@
     ```bash
     pip install -e .[tests]
     ```
+4. Install nox, if you want to run your tests via nox
+    ```bash
+    pip install nox
+    ```
 
-## Installation
+
 ## Usage
+
+### Run the tests
+You either can run them:
+ - In your Python virtual env, via: `pytest tests/`
+ - Or by executing `nox -s tests`
+
+
+
 ### Cli
 
 ```bash
@@ -37,4 +54,4 @@ From USD to CHF
 ```
 
 ### GUI
-Running `gui-currency-converter.exe` should start the gui.
+Running `gui-currency-converter.exe` within your python virtual environment should start the gui.
