@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "currency-converter"
+description = ""
+dynamic = ["version"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["isort", "black", "flake8", "pytest","pytest-clarity", "nox"]
+tests = ["pytest", "pytest-clarity", "pytest-cov", "flake8"]
+
+[project.scripts]
+currency-converter = "currency_converter.cli:main"
+
+[project.gui-scripts]
+gui-currency-converter = "currency_converter.gui:main"
+
+[tool.setuptoos]
+packages = ["currency_converter"]
+
+[tool.setuptools.dynamic]
+version = { attr = "currency_converter.__version__" }
+
+[tool.setuptools.package-data]
+"currency_converter.data" = ["*.*"]
+
+[tool.pytest.ini_options]
+log_cli = true
+log_level = "DEBUG"
+# log_cli_level = "DEBUG"
+minversion = "6.0"
+addopts = "-s -vv"
+pythonpath = ["src"]
+testpaths = ["tests"]
